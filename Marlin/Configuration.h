@@ -21,6 +21,7 @@
  */
 #pragma once
 
+
 /**
  * Configuration.h
  *
@@ -109,7 +110,7 @@
  * Select a secondary serial port on the board to use for communication with the host.
  * :[-1, 0, 1, 2, 3, 4, 5, 6, 7]
  */
-//#define SERIAL_PORT_2 -1
+//#define SERIAL_PORT_2 1
 
 /**
  * This setting determines the communication speed of the printer.
@@ -424,7 +425,7 @@
 #define TEMP_SENSOR_5 0
 #define TEMP_SENSOR_6 0
 #define TEMP_SENSOR_7 0
-#define TEMP_SENSOR_BED 0
+#define TEMP_SENSOR_BED 1
 #define TEMP_SENSOR_PROBE 0
 #define TEMP_SENSOR_CHAMBER 0
 
@@ -627,6 +628,14 @@
 //#define USE_XMAX_PLUG
 //#define USE_YMAX_PLUG
 #define USE_ZMAX_PLUG
+
+// reassing endstop pins to free Serial1 port pins
+#define X_MIN_PIN 3
+#define X_MAX_PIN -1
+#define Y_MIN_PIN 2
+#define Y_MAX_PIN -1
+#define Z_MIN_PIN -1
+#define Z_MAX_PIN 14
 
 // Enable pullup for all endstops to prevent a floating state
 #define ENDSTOPPULLUPS
