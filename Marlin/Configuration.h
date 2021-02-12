@@ -2020,7 +2020,7 @@
 // Elefu RA Board Control Panel
 // http://www.elefu.com/index.php?route=product/product&product_id=53
 //
-//#define RA_CONTROL_PANEL
+#define RA_CONTROL_PANEL
 
 //
 // Sainsmart (YwRobot) LCD Displays
